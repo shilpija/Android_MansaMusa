@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        //pending
+
+        <LinearLayout
+            android:id="@+id/linear_pending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/pending"
+                android:textColor="@color/app_color_blue"
+                android:textSize="@dimen/label_text_size_18" />
+
+            <LinearLayout
+                android:id="@+id/linear_pending_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_color_blue"></LinearLayout>
+        </LinearLayout>
+
+        //delivered
+
+        <LinearLayout
+            android:id="@+id/linear_delivered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_delivered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/completed"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/label_text_size_18" />
+
+            <LinearLayout
+                android:id="@+id/linear_delivered_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"></LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/historyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:paddingLeft="@dimen/padding_listitem"
+        android:paddingRight="@dimen/padding_listitem"
+        android:paddingTop="@dimen/padding_listitem" />
+
+</LinearLayout>

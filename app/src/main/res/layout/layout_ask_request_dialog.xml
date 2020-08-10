@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linear_main_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:background="@color/white80"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_15">
+
+        //name
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:background="@null"
+            android:gravity="left"
+            android:text="@string/name"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/label_text_size_13"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_outline_gray">
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="@dimen/padding_5"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label_text_size" />
+        </LinearLayout>
+
+        //email id
+
+        //phone number
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="left"
+            android:text="@string/email"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/label_text_size_13"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_outline_gray">
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/padding_5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label_text_size" />
+        </LinearLayout>
+
+
+        //phone number
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="left"
+            android:text="@string/contact"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/label_text_size_13"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_outline_gray">
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="phone"
+                android:padding="@dimen/padding_5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label_text_size" />
+        </LinearLayout>
+
+        //location
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="left"
+            android:text="@string/loc"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/label_text_size_13"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_outline_gray">
+
+            <TextView
+                android:id="@+id/text_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label_text_size" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="left"
+            android:text="@string/ask_type"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/label_text_size_13"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5"
+            android:gravity="center"
+            android:background="@drawable/bg_outline_gray">
+
+            <Spinner
+                android:id="@+id/stype_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:popupBackground="@color/white" />
+
+            <ImageView
+                android:id="@+id/stype_spinner_arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow_donw" />
+
+        </LinearLayout>
+
+
+
+        //cancel and send btn
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center|right">
+
+            <TextView
+                android:id="@+id/text_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:text="@string/cancel"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/label_text_size_15" />
+
+            <LinearLayout
+                android:id="@+id/linear_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/bg_round_coner_green">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:paddingLeft="@dimen/padding_30"
+                    android:paddingRight="@dimen/padding_30"
+                    android:paddingTop="@dimen/padding_5"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/label_text_size_15" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

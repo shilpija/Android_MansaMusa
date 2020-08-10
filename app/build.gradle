@@ -1,0 +1,120 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.freshhome"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 7
+        versionName "1.7"
+        multiDexEnabled true //important
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+
+    dexOptions {
+        //4g : 4GB max dex size, 2048m
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
+    // location play services
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.firebase:firebase-client-android:2.4.0'
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-perf:16.2.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+
+    implementation 'com.google.firebase:firebase-dynamic-links:16.0.5'
+// for dynamic link deep link
+    implementation 'com.google.firebase:firebase-invites:16.0.5' //for share link invite
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    // dexter runtime permissions
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'joda-time:joda-time:2.9.1'
+    implementation 'com.squareup:otto:1.3.8'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.8@aar') {
+        transitive = true;
+    }
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    //zxing for scanner
+    implementation 'com.journeyapps:zxing-android-embedded:3.3.0'
+    implementation 'com.google.zxing:core:3.3.0'
+    //youtube player
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    //https
+    implementation 'org.apache.httpcomponents:httpcore:4.4.1'
+    implementation 'com.stripe:stripe-android:6.1.2'
+    implementation 'com.android.volley:volley:1.1.1'
+
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
+    implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.0.6'
+
+//    implementation 'org.apache.httpcomponents:httpclient:4.5'
+
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+}
+apply plugin: 'com.google.gms.google-services'

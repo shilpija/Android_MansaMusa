@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_5"
+    android:paddingLeft="@dimen/padding_10"
+    android:paddingRight="@dimen/padding_10"
+    android:paddingTop="@dimen/padding_5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/orderno"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label_text_size_15" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:text="@string/demo_price"
+                    android:textSize="@dimen/label_text_size_15"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_msg_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:maxLines="2"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/demo_price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size_15"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="on 23 Jan 2019"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/label_text_size_13" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow_up_green" />
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="cash in"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label_text_size_13" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@color/gray_light_50"></LinearLayout>
+</LinearLayout>

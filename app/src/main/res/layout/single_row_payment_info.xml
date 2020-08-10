@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            android:id="@+id/text_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".45"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/transaction_fee"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/label_text_size_13" />
+
+        <TextView
+            android:id="@+id/text_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_weight=".55"
+            android:text="@string/demo_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/label_text_size_14" />
+    </LinearLayout>

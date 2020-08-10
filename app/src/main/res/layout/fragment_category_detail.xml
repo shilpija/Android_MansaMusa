@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.UserHomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10">
+
+            <!--         sub categories-->
+
+            <LinearLayout
+                android:id="@+id/linear_sub_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shop_category"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/label_text_size_15" />
+
+                    <TextView
+                        android:id="@+id/text_Cviewall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/viewall"
+                        android:textColor="@color/app_color_orange"
+                        android:textSize="@dimen/label_text_size_15" />
+
+                </LinearLayout>
+
+
+                <com.freshhome.CommonUtil.ExpandableHeightGridView
+                    android:id="@+id/gridCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="@dimen/padding_10"
+                    android:numColumns="2"
+                    android:verticalSpacing="@dimen/padding_10" />
+
+            </LinearLayout>
+
+            <!--            suppliers-->
+
+            <LinearLayout
+                android:id="@+id/linear_suppliers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shop_supplier"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/label_text_size_15" />
+
+                    <TextView
+                        android:id="@+id/text_Sviewall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/viewall"
+                        android:textColor="@color/app_color_orange"
+                        android:textSize="@dimen/label_text_size_15" />
+
+                </LinearLayout>
+
+
+                <com.freshhome.CommonUtil.ExpandableHeightGridView
+                    android:id="@+id/gridSupplier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="@dimen/padding_10"
+                    android:numColumns="2"
+                    android:verticalSpacing="@dimen/padding_10" />
+
+            </LinearLayout>
+
+            <!--           brands-->
+
+            <LinearLayout
+                android:id="@+id/linear_brands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shop_brands"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/label_text_size_15" />
+
+                    <TextView
+                        android:id="@+id/text_Bviewall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/viewall"
+                        android:textColor="@color/app_color_orange"
+                        android:textSize="@dimen/label_text_size_15" />
+
+                </LinearLayout>
+
+
+                <com.freshhome.CommonUtil.ExpandableHeightGridView
+                    android:id="@+id/gridBrands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="@dimen/padding_3"
+                    android:numColumns="2"
+                    android:verticalSpacing="@dimen/padding_3" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_light_50"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_10">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="@dimen/padding_8"
+        android:src="@drawable/loc_black" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:textSize="@dimen/label_text_size_15"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:text="Hotel Leela classic, New DHCL"
+            android:textColor="@color/black"
+            android:textSize="@dimen/label_text_size_15" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/padding_8"
+            android:src="@drawable/edit" />
+
+        <TextView
+            android:id="@+id/text_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default"
+            android:textColor="@color/app_color_orange"
+            android:textSize="@dimen/label_text_size_13" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FreshHome</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="description">وصف</string>
+    <string name="send">إرسال</string>
+    <string name="subject">موضوع</string>
+    <string name="contact_us">اتصل بنا</string>
+</resources>

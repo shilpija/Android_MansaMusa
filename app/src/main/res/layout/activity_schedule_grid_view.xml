@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleGridViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/back_b"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/chefschedule"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridViewschedule"
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/margin_5"
+        android:horizontalSpacing="@dimen/margin_5"
+        android:layout_height="wrap_content"></GridView>
+
+</LinearLayout>

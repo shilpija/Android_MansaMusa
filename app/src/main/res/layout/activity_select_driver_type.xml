@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    tools:context=".SelectCookEatActivity">
+    //header
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="@dimen/padding_label"
+                android:text="@string/arabic"
+                android:textColor="@color/app_color_blue"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="@dimen/padding_label"
+                android:text="@string/english"
+                android:textColor="@color/app_color_orange"
+                android:textSize="@dimen/label_text_size" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    //body
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:src="@drawable/left_menu" />
+
+        <LinearLayout
+            android:id="@+id/linear_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/delivery_bike" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="@string/deliveryman"
+                android:textColor="@color/app_color_blue"
+                android:textSize="@dimen/label_text_size_17" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_company_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/delivery_bike" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="@string/deliveryman_company"
+                android:textColor="@color/app_color_blue"
+                android:textSize="@dimen/label_text_size_17" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@android:color/transparent" />
+</LinearLayout>

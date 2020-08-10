@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/back_b"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/paymentoption"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text" />
+
+        <ImageView
+            android:id="@+id/image_ok"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/white_ok"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10">
+        //payment method
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/padding_8"
+                android:paddingRight="@dimen/padding_8"
+                android:text="@string/selectpaymentmethod"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/label_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingRight="@dimen/padding_8"
+                android:text="@string/text_default"
+                android:textColor="@color/app_color_blue"
+                android:textSize="@dimen/label_text_size_10" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5">
+
+                <Spinner
+                    android:id="@+id/spinner_paymentmethod"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:padding="@dimen/padding_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow_donw" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        //added card
+
+        <TextView
+            android:id="@+id/text_addedcards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingRight="@dimen/padding_8"
+            android:text="@string/addedcard"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/label_text_size" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_cardlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="3dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_addcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/bg_bottom_round_coner_orange"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingBottom="@dimen/padding_5"
+                    android:paddingLeft="@dimen/padding_20"
+                    android:paddingRight="@dimen/padding_20"
+                    android:paddingTop="@dimen/padding_5"
+                    android:text="@string/continue_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/label_text_size" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

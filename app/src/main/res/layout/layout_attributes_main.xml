@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_5"
+    android:paddingLeft="@dimen/padding_10"
+    android:paddingRight="@dimen/padding_10"
+    android:paddingTop="@dimen/padding_5">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_5"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/label_text_size_13"
+        android:textStyle="bold" />
+
+//spinner
+    <LinearLayout
+        android:id="@+id/linear_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Spinner
+            android:id="@+id/attribute_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@color/white" />
+
+        <ImageView
+            android:id="@+id/image_attribute_arrow"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow_donw" />
+
+    </LinearLayout>
+//radio
+    <LinearLayout
+        android:id="@+id/linear_radio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_5"
+        android:orientation="vertical">
+
+        <com.freshhome.CommonUtil.ExpandableHeightGridView
+            android:id="@+id/radio_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/padding_5"
+            android:numColumns="1"
+            android:verticalSpacing="@dimen/padding_5"/>
+    </LinearLayout>
+
+    //checbox
+    <LinearLayout
+        android:id="@+id/linear_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_5"
+        android:orientation="vertical">
+
+        <com.freshhome.CommonUtil.ExpandableHeightGridView
+            android:id="@+id/checkbox_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/padding_5"
+            android:numColumns="1"
+            android:verticalSpacing="@dimen/padding_5"/>
+
+    </LinearLayout>
+</LinearLayout>

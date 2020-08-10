@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_5"
+    android:paddingRight="@dimen/padding_5">
+
+    <LinearLayout
+        android:id="@+id/linear_bg_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_outline_green"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_8"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_8"
+            android:text="Veg-Non Veg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/label_text_size_13" />
+
+        <CheckBox
+            android:id="@+id/check_remove"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="@dimen/padding_10"
+            android:buttonTint="@color/app_color_blue"
+            android:padding="@dimen/padding_5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".ChangePassword"
+    tools:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/back_b"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/plan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_sub_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_10"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sub_msg"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/label_text_size_15" />
+
+                    <TextView
+                        android:id="@+id/text_plan_expiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/label_text_size_24" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_plan_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="@string/sub_status"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/label_text_size_15" />
+
+                        <TextView
+                            android:id="@+id/text_plan_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/label_text_size_24" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_plan_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+                    //image/name/datetime
+
+                    <RadioButton
+                        android:id="@+id/radiobutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/app_color_blue"
+                        android:drawableTint="@color/app_color_blue"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                       >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardElevation="5dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/plan_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Plan 1"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/label_text_size_24" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:id="@+id/plan_price"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="bottom"
+                                            android:gravity="center"
+                                            android:text="$222"
+                                            android:textColor="@color/app_color_orange"
+                                            android:textSize="@dimen/label_text_size_30" />
+
+                                        <TextView
+                                            android:id="@+id/plan_duration"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="bottom"
+                                            android:layout_marginLeft="@dimen/margin_5"
+                                            android:gravity="bottom"
+                                            android:text="per month"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/label_text_size_13" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/text_details"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/padding_10"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/label_text_size_15" />
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_make_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_5">
+
+            <TextView
+                android:id="@+id/text_cardno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/select_card"
+                android:textColor="@color/app_color_orange"
+                android:textSize="@dimen/label_text_size_17"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_color_blue"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/proceed"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_cancel_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color_blue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel_subscription"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

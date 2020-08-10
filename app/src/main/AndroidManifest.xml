@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.freshhome">
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".CommonUtil.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/rect_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".OrderTrackingDetailActivity"></activity>
+        <activity android:name=".OrderReturnActivity" />
+        <activity android:name=".ProductFilterActivity" />
+        <activity android:name=".BuyerSearchActivity" />
+        <activity android:name=".CommonWebViewActivity" />
+        <activity android:name=".SubmitRequestActivity" />
+        <activity android:name=".AllSubCategoriesSelectionActivity" />
+        <activity android:name=".NationalIDActivity" />
+        <activity android:name=".DriverModule.DriverOrderDetailActivity" />
+        <activity android:name=".DriverModule.AllOrderListActivity" />
+        <activity android:name=".DriverModule.DeliverOrder" />
+        <activity
+            android:name=".DriverModule.AllOrdersMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity -->
+        <!-- android:name=".ccavenue.InitialScreenActivity" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".SelectCookEatActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".MobileNumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".OTPActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".MainActivity_NavDrawer"
+            android:label="@string/title_activity_main__nav_drawer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ChangePassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".AddMenuActivity"
+            android:label="@string/title_activity_add_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".FeedbackListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScheduleEachWeekActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SalesGraphDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeItemDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupplierDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserEditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".UserAddressListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".UserOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".AddCardDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".UserOrderFeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".UserCartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".UpdateUserToSupplier"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ScheduleGridViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SupplierMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".MenuItemFeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".OrderCheckout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ScheduleDayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DriverModule.DriverLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".DriverModule.DriverOTPVerification"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".DriverModule.DriverProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".DriverModule.DriverCompanyHomefragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <activity
+            android:name=".DriverModule.DriverNotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserPaymentMethodFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DriverModule.DriverNavDrawerActivity"
+            android:label="@string/title_activity_driver_nav_drawer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SalesModule.ActivitySalesRegister"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SalesModule.ActivitySalesNavDrawer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".SalesModule.Activity_Sales_EditProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SalesModule.Activity_Sales_RequestDetail"
+            android:label="@string/title_activity__sales__request_detail"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ActivityQRCode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SalesModule.ActivityDemoVideos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivitySupplierRequestDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HeaderImageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseBannerImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompleteHelpRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddProduct_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".AddProdcutVarients_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddProductDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectSubCategoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MultipleSubCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DriverModule.SelectDriverTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProduct_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ChangeEmailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".WebBrowserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DriverModule.IndividualDriverRegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".DriverModule.DriverIndividualEditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".DriverModule.ChangeDrivingLicense"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".AddBankAccount_Activity"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".PlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseCard"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TrackOrderActivity" />
+        <activity android:name=".ccavenue.WebViewActivity" />
+        <activity
+            android:name=".ccavenue.InitialScreenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".AddressPickerAct" />
+        <activity android:name=".CommonWebpage" />
+        <activity android:name="utils.TakeImage" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6f7d494925f20cc42ca1a48ca0db5239e33216a0" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/left_menu" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/app_color_orange" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+<!--        <provider-->
+<!--            android:name="android.support.v4.content.FileProvider"-->
+<!--            android:authorities="com.freshhome.fileprovider"-->
+<!--            android:exported="false"-->
+<!--            tools:replace="android:authorities"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/fhome_provider" />-->
+
+            <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="com.freshhome"
+                android:exported="false"
+                tools:replace="android:authorities"
+                android:grantUriPermissions="true">
+                <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/provider_paths" />
+            </provider>
+
+<!--        </provider> &lt;!&ndash; <service &ndash;&gt;-->
+        <!-- android:name=".FCMNotification.MyFirebaseMessagingService" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <service android:name=".Firebase.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Firebase.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- SERVICES -->
+        <service
+            android:name=".CommonUtil.TrackerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".CommonUtil.FetchAddressService" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

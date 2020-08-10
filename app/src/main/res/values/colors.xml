@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_color_blue">#021540</color>
+    <color name="app_color_orange">#DF8317</color>
+    <color name="app_opq_orange">#A6DF8317</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white80">#CCffffff</color>
+    <color name="red">#ED1C24</color>
+    <color name="edit_text_color">#0F110E</color>
+    <color name="edit_text_hint">#9D9C9A</color>
+    <color name="rating_stars">#FFC000</color>
+    <color name="light_gray">#9D9C9A</color>
+    <color name="extra_light_gray">#DCDBDA</color>
+    <color name="gray_light_50">#EFEFEF</color>
+    <color name="yellow">#DF8317</color>
+    <color name="background_color">#F3F3F3</color>
+    <color name="gray">#7A6C80</color>
+
+    <color name="heading_bg_supplier">#DF8317</color>
+    <color name="light_gray_20">#339D9C9A</color>
+
+    <color name="app_color_green_40">#E6296207</color>
+    <color name="green">#E62E7106</color>
+    <color name="orange80">#B3021540</color>
+    <color name="blue">#5369E0</color>
+    <color name="dividerColor">#C9C9C8</color>
+    <color name="greytxt">#ACACA8</color>
+    <color name="blacklight">#595858</color>
+    <color name="grey_btn">#E3E3E3</color>
+    <color name="app_blue_dark">#020919</color>
+    <color name="actionBarBackgroundColor">#021540</color>
+    <color name="greyli">#EFEFF4</color>
+    <color name="greybold">#d0d4d7</color>
+</resources>

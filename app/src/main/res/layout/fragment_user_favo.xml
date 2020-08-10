@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.UserFavoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        //favo chef
+
+        <LinearLayout
+            android:id="@+id/linear_chef"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_chef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/favo_chef"
+                android:textColor="@color/app_color_blue"
+                android:textSize="@dimen/label_text_size_18" />
+
+            <LinearLayout
+                android:id="@+id/linear_chef_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_color_blue"></LinearLayout>
+        </LinearLayout>
+
+        //favo dishes
+
+        <LinearLayout
+            android:id="@+id/linear_dishes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/favo_dish"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/label_text_size_18" />
+
+            <LinearLayout
+                android:id="@+id/linear_dish_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"></LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/FavoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:paddingLeft="@dimen/padding_listitem"
+            android:paddingRight="@dimen/padding_listitem"
+            android:paddingTop="@dimen/padding_listitem" />
+
+        <LinearLayout
+            android:id="@+id/linear_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="@dimen/padding_5"
+                android:src="@drawable/no_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/no_data"
+                android:textColor="@color/app_color_orange"
+                android:textSize="@dimen/label_text_size_18" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

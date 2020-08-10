@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeekCalendar">
+        <attr name="numOfPages" format="integer" />
+        <attr name="daysTextSize" format="dimension" />
+        <attr name="daysTextColor" format="color" />
+        <attr name="daysBackgroundColor" format="color" />
+        <attr name="weekTextSize" format="dimension" />
+        <attr name="weekTextColor" format="color" />
+        <attr name="weekBackgroundColor" format="color" />
+        <attr name="selectedBgColor" format="color" />
+        <attr name="todaysDateBgColor" format="color" />
+        <attr name="dayNameLength">
+            <enum name="singleLetter" value="0" />
+            <enum name="threeLetters" value="1" />
+        </attr>
+        <attr name="hideNames" format="boolean" />
+
+        <attr name="todaysDateTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="flFlow" format="boolean" />
+        <attr name="flChildSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="flMinChildSpacing" format="dimension" />
+        <attr name="flChildSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+            <enum name="align" value="-65537" />
+        </attr>
+        <attr name="flRowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="flRtl" format="boolean" />
+        <attr name="flMaxRows" format="integer" />
+        <attr name="flRowVerticalGravity" format="enum">
+            <enum name="auto" value="-65536" />
+            <enum name="top" value="0x30" />
+            <enum name="center" value="0x10" />
+            <enum name="bottom" value="0x50" />
+        </attr>
+        <attr name="android:gravity" />
+    </declare-styleable>
+</resources>

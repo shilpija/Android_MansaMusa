@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/history"
+            android:title="@string/mytrips" />
+        <item
+            android:id="@+id/nav_plan"
+            android:icon="@drawable/your_plan"
+            android:title="@string/plan" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet"
+            android:title="@string/mywallet" />
+        <item
+            android:id="@+id/nav_cards"
+            android:icon="@drawable/card"
+            android:title="@string/your_card" />
+
+        <item
+            android:id="@+id/nav_editprofile"
+            android:icon="@drawable/edit"
+            android:title="@string/edit_profile" />
+
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/email"
+            android:title="@string/contact_us" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+
+
+    </group>
+
+    <item
+        android:id="@+id/switchto"
+        android:title="@string/switchto">
+        <menu>
+
+            <item
+                android:id="@+id/nav_custmer"
+                android:icon="@drawable/buy"
+                android:title="@string/ascustomer_i" />
+
+            <item
+                android:id="@+id/nav_sales"
+                android:icon="@drawable/switch_user"
+                android:title="@string/assales_i" />
+
+
+        </menu>
+
+
+    </item>
+
+    <item
+        android:id="@+id/change_langauge"
+        android:title="@string/change_langauge">
+        <menu>
+            <item
+                android:id="@+id/nav_english"
+                android:icon="@drawable/lang"
+                android:title="@string/english" />
+            <item
+                android:id="@+id/nav_arabic"
+                android:icon="@drawable/lang"
+                android:title="@string/arabic" />
+        </menu>
+
+
+    </item>
+</menu>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10">
+
+            <LinearLayout
+                android:id="@+id/linear_week"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_bg_w_one"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="THU"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/label_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="top|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_wdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1, Sept 2018"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size_15" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Timmings"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/label_text_size_13" />
+
+                        <TextView
+                            android:id="@+id/text_start_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="8:00 a.m."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/label_text_size_15" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:visibility="invisible"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/label_text_size_13" />
+
+                        <TextView
+                            android:id="@+id/text_end_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="9:00 p.m."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/label_text_size_15" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.freshhome.CommonUtil.FlowLayout
+                    android:id="@+id/flow_layout_w1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                </com.freshhome.CommonUtil.FlowLayout>
+
+                <TextView
+                    android:id="@+id/text_selectmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Select Menu"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/label_text_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/menu"
+            android:title="@string/mymenu" />
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart"
+            android:title="@string/mycart" />
+
+        <item
+            android:id="@+id/nav_trackorder"
+            android:icon="@drawable/track_order"
+            android:title="@string/trackorder" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history"
+            android:title="@string/myhistory" />
+
+        <item
+            android:id="@+id/nav_favo"
+            android:icon="@drawable/heart_i"
+            android:title="@string/myfavo" />
+
+
+        <item
+            android:id="@+id/nav_paymentop"
+            android:icon="@drawable/card"
+            android:title="@string/paymentoption" />
+
+        <item
+            android:id="@+id/nav_kitchen"
+            android:icon="@drawable/kitchen"
+            android:title="@string/my_order" />
+        <item
+        android:id="@+id/nav_addmenu"
+            android:visible="false"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="@string/addmenu" />
+
+        <item
+            android:id="@+id/nav_schedule"
+            android:visible="false"
+            android:icon="@drawable/schedule"
+            android:title="@string/schedule" />
+        <item
+            android:id="@+id/nav_plan"
+            android:icon="@drawable/your_plan"
+            android:title="@string/plan" />
+
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet"
+            android:title="@string/mywallet" />
+
+
+        <item
+            android:id="@+id/nav_salesreport"
+            android:icon="@drawable/sales_report"
+            android:title="@string/salesreport" />
+        <item
+            android:id="@+id/nav_invitefriends"
+            android:icon="@drawable/invite"
+            android:title="@string/invite" />
+
+        <item
+            android:id="@+id/nav_editprofile"
+            android:icon="@drawable/edit"
+            android:title="@string/edit_profile" />
+
+
+        <item
+            android:id="@+id/nav_askforhelp"
+            android:icon="@drawable/askforhelp"
+            android:title="@string/askforhelp" />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/email"
+            android:title="@string/contact_us" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+    <item
+        android:id="@+id/switchto"
+        android:title="@string/switchto">
+        <menu>
+
+            <item
+                android:id="@+id/nav_supplier"
+                android:icon="@drawable/sell"
+                android:title="@string/assupplier_i" />
+
+            <item
+                android:id="@+id/nav_custmer"
+                android:icon="@drawable/cart"
+                android:title="@string/ascustomer_i" />
+
+            <item
+                android:id="@+id/nav_sales"
+                android:icon="@drawable/switch_user"
+                android:title="@string/assales_i" />
+
+            <item
+                android:id="@+id/nav_driver"
+                android:icon="@drawable/delivery_bike"
+                android:title="@string/driver" />
+
+        </menu>
+
+
+    </item>
+
+    <item android:title="@string/change_langauge"
+        android:id="@+id/change_langauge">
+        <menu>
+            <item
+                android:id="@+id/nav_english"
+                android:icon="@drawable/lang"
+                android:title="@string/english" />
+            <item
+                android:id="@+id/nav_arabic"
+                android:icon="@drawable/lang"
+                android:title="@string/arabic" />
+        </menu>
+
+
+    </item>
+
+</menu>

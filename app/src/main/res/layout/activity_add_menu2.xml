@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".MenuDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/back_b"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/addmenu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_20">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circle_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/demo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/addimage"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_10" />
+
+
+                //dish name
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:text="@string/dishname"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <EditText
+                    android:id="@+id/edit_dishname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/padding_5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                //dish name
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:text="@string/dishname_arbic"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <EditText
+                    android:id="@+id/edit_dishname_arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/padding_5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+
+                //description
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:text="@string/description"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <EditText
+                    android:id="@+id/edit_dishdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/padding_5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                //description
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:text="@string/description_arbic"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <EditText
+                    android:id="@+id/edit_dishdescription_arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/padding_5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:background="@color/light_gray"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:visibility="visible"
+                    android:text="@string/main_category"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <TextView
+                    android:id="@+id/tvMainCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:hint="Select"
+                    android:textColorHint="@color/light_gray"
+                    android:padding="@dimen/padding_5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/main_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@null"
+                    android:visibility="visible"
+                    android:popupBackground="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:background="@color/light_gray"/>
+
+                //categories
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="@string/categories"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/label_text_size_13" />
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:gravity="center|left"
+                        android:layout_marginTop="5dp"
+                        android:hint="Select"
+                        android:textColorHint="@color/light_gray"
+                        android:padding="@dimen/padding_5"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/sub_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@null"
+                        android:popupBackground="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/image_addcategory"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        android:src="@drawable/add" />
+
+                </LinearLayout>
+
+                <com.freshhome.CommonUtil.FlowLayout
+                    android:id="@+id/flow_layout_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    app:flRowSpacing="5dp" />
+
+                <TextView
+                    android:id="@+id/text_sub_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                //price
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:text="@string/price"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <EditText
+                    android:id="@+id/edit_dishprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:inputType="number|textCapWords"
+                    android:padding="@dimen/padding_5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                <TextView
+                    android:id="@+id/text_price_breakdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                //PRICCE
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:text="@string/price_get"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <TextView
+                    android:id="@+id/text_final_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:gravity="center|left"
+                    android:padding="@dimen/padding_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                //item prepare
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:visibility="gone"
+                    android:text="@string/item_prepare_time"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <Spinner
+                    android:id="@+id/spinner_item_pretime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center|left"
+                    android:padding="@dimen/padding_5"
+                    android:visibility="gone"
+                    android:popupBackground="@color/white"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"/>
+
+                //cuisines
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="@string/cuisines"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/label_text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/image_addcuisine"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="4dp"
+                        android:src="@drawable/add" />
+
+                </LinearLayout>
+
+                <com.freshhome.CommonUtil.FlowLayout
+                    android:id="@+id/flow_layout_cuisines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    app:flRowSpacing="5dp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+
+               //main_category CATEGORY SEELCTION
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:gravity="center|left"-->
+<!--                    android:text="@string/main_category"-->
+<!--                    android:textColor="@color/light_gray"-->
+<!--                    android:textSize="@dimen/label_text_size_13" />-->
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/main_category"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:popupBackground="@color/white"></Spinner>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="@color/light_gray"></LinearLayout>-->
+
+<!--                //categories-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:gravity="center|left"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:text="@string/categories"-->
+<!--                        android:textColor="@color/light_gray"-->
+<!--                        android:textSize="@dimen/label_text_size_13" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/image_addcategory"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:padding="4dp"-->
+<!--                        android:src="@drawable/add" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <com.freshhome.CommonUtil.FlowLayout-->
+<!--                    android:id="@+id/flow_layout_category"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:flRowSpacing="5dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/text_sub_categories"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="@dimen/padding_5"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/label_text_size" />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="@color/light_gray"></LinearLayout>-->
+
+                //brands
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:gravity="center|left"
+                    android:text="@string/brands"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <Spinner
+                    android:id="@+id/FoodBrands"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"/>
+
+
+                //meals
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:visibility="gone"
+                    android:text="@string/selectmeals"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <Spinner
+                    android:id="@+id/mealSpinner"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"/>
+
+                //serrving
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center|left"
+                    android:text="@string/serving"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/label_text_size_13" />
+
+                <Spinner
+                    android:id="@+id/serveSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:buttonTint="@color/app_color_blue"
+                    android:text="@string/offer_discount"
+                    android:textColor="@color/light_gray" />
+
+                //discount
+
+                <LinearLayout
+                    android:id="@+id/linear_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center|left"
+                        android:text="@string/discount"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/label_text_size_13" />
+
+                    <EditText
+                        android:id="@+id/edit_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:inputType="time"
+                        android:padding="@dimen/padding_5"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_gray"/>
+                    <TextView
+                        android:id="@+id/text_discount_breakdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:textColor="@color/app_color_orange"
+                        android:textSize="@dimen/label_text_size_13" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color_blue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_text_size" />
+    </LinearLayout>
+</LinearLayout>

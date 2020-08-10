@@ -1,0 +1,760 @@
+<resources>
+    <string name="app_name">Mansa Musa</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="to_eat">To Eat</string>
+    <string name="to_cook">To Cook</string>
+    <string name="deliveryman">Mansa Musa Driver?</string>
+    <string name="deliveryman_company">Company Driver?</string>
+
+    <string name="suppliers">Suppliers</string>
+    <string name="buyer">Buyer</string>
+    <string name="supplychain">Supply Chain</string>
+    <string name="business_development">Business Development</string>
+
+
+    <string name="api_key">AIzaSyApGbZ8BiqkxzSAvHwEEFpnPD721preR5s</string>
+    <string name="api_key22">AIzaSyBozWvk_dFMd7fYfkF9ShfTjM9iApq9vic</string>
+    <string name="api_keyaa">AIzaSyDbeg8Dh2fnyHpmMcuL2PtUPN9kqvQFDdY</string>
+
+    //login
+    <string name="hint_login">Username/Email</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+    <string name="first_time_login">First time here?</string>
+    <string name="signup">Sign Up</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
+    <string name="hint_no">Mobile Number</string>
+    <string name="code">+971</string>
+    <string name="enter_otp">Enter OTP</string>
+
+    //signup
+    <string name="enter_dob">Select your date of birth</string>
+    <string name="re_pass">Re-enter password</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="select_location">Your location</string>
+    <string name="already_account">Already have a account?</string>
+    <string name="title_activity_main__nav_drawer">MainActivity_NavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="re_send">RE-SEND OTP</string>
+
+    <string name="buildingno">Building Name and No.</string>
+    <string name="floor_no">Floor No.</string>
+    <string name="flat">Flat No.</string>
+    <string name="landmark">Landmark(Anything near by you)</string>
+
+    //nav drawer
+    <string name="home">Home</string>
+    <string name="mymenu">My Products</string>
+    <string name="kitchen">My Kitchen</string>
+    <string name="addmenu">Add Menu</string>
+    <string name="schedule">My Schdeule</string>
+    <string name="plan">My Plan</string>
+    <string name="salesreport">My Sales Report</string>
+    <string name="invite">Invite Your Customers</string>
+    <string name="edit_profile">Update Profile</string>
+    <string name="profile">My Profile</string>
+    <string name="ascustomer">Switch To Eat</string>
+    <string name="assupplier">Switch As Chef</string>
+
+
+    <string name="trackorder">Track Order</string>
+    <string name="mycart">My Cart</string>
+    <string name="myfavo">My Favourite</string>
+    <string name="myhistory">My History</string>
+    <string name="paymentoption">Payment Options</string>
+    <string name="mywallet">My Balance</string>
+
+    <string name="contact_us">Contact Us</string>
+    <string name="logout">Logout</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //home
+    <string name="feedback">Feedback By</string>
+    <string name="comments">Comments</string>
+    <string name="individual_rating">All Ratings</string>
+
+    <string name="notification">Notifications</string>
+    <string name="pre_order">Pre-Order</string>
+    <string name="reviews">Reviews</string>
+    <string name="rated">rated you on</string>
+    <string name="addcomment">add a feedback on</string>
+    <string name="collection_date">Collection Date  </string>
+    <string name="collection_time">Collection Time  </string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="processing">Processing</string>
+    <string name="rejected">Rejected</string>
+    <string name="returned">Return</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="out_of_delivery">Out for Delivery</string>
+
+    <string name="accept_order">Accept Order</string>
+    //menu
+    <string name="pendingorder">Pending Orders</string>
+    <string name="itemavailable">Available\nItems</string>
+    <string name="userviews">Users\nViews</string>
+    <string name="deliveredorder">Delivered\nOrders</string>
+    <string name="makeavailable">Available for the customers</string>
+    <string name="online">Online</string>
+    <string name="views">Views</string>
+    <string name="city">City</string>
+    <string name="changepassword">Change Password</string>
+    <string name="about">About</string>
+    <string name="dob">Date of birth</string>
+    <string name="loc">Location</string>
+    <string name="contact">Contact Number</string>
+    <string name="nationality">Nationality</string>
+    <string name="clickhere">Click here for more details</string>
+    <string name="update">Update</string>
+    <string name="invite_content">Invite your friends to install Mansa Musa to get interesting offers</string>
+    <string name="invite_content2">More they join more you will earn</string>
+    //sales
+    <string name="sales">Sales</string>
+    <string name="thismonth">this month</string>
+    <string name="thisyear">this year</string>
+    <string name="today">Today</string>
+    <string name="month">Month</string>
+    <string name="totaleraning">Total Earning</string>
+    <string name="howworks">How it works?</string>
+    <string name="addimage">Add original image</string>
+
+
+    //add menu
+    <string name="dishname_arbic">Dish Name in Arabic</string>
+    <string name="dishname">Dish Name</string>
+    <string name="description_arbic">Description in Arabic</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="item_prepare_time">Time of preparation (in min)</string>
+    <string name="cuisines">Cuisines</string>
+    <string name="categories">Categories</string>
+    <string name="done">Done</string>
+    <string name="addcategory">Add Category</string>
+    <string name="addcuisine">Add Cuisines</string>
+
+
+    //my kitchen
+    <string name="my_order">My Order</string>
+    <string name="order">Orders</string>
+    <string name="pending">Pending</string>
+    <string name="delivered">Delivered</string>
+    <string name="completed">Completed</string>
+    <string name="Orders_delivered">Orders Delivered</string>
+    <string name="orderready">Order is ready</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="bycustomer">By customers</string>
+    <string name="orderdetail">Order Detail</string>
+
+    <string name="delivery">Delivery</string>
+    <string name="payment_i">Payment</string>
+
+
+    //alert
+    <string name="processing_dilaog">Loading.........</string>
+    <string name="server_error">Server Error, please try again.</string>
+    <string name="mandatory_fiels">All fields are required</string>
+    <string name="internetconnection">Please check you internet connection</string>
+    <string name="enter_phone">Please enter phone number</string>
+    <string name="valid_phone">Please enter valid phone number</string>
+    <string name="enter_otp_warn">Please enter OTP</string>
+    <string name="verification_failed">Verification Failed! Please try again later</string>
+    <string name="invalid_code">Invalid code.</string>
+    <string name="enter_email">Please enter username/email-id</string>
+    <string name="enter_email_id">Please enter email-id</string>
+    <string name="valid_email">Please enter vaild email-id</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_repassword">Please re-enter password</string>
+    <string name="password_match">Password should be same</string>
+    <string name="enter_username">Please enter username</string>
+    <string name="enterdob">Please select date of birth</string>
+    <string name="enter_loc">Please select your location</string>
+    <string name="enter_sub">Please enter subject</string>
+    <string name="enter_msg">Please enter message</string>
+    <string name="enter_buildingno">Please enter building name and number</string>
+    <string name="enter_floorgno">Please enter floor number</string>
+    <string name="enter_flatno">Please enter flat number</string>
+    <string name="enter_landmark">Please enter landmark</string>
+    <string name="enter_product_type">Please select product type</string>
+    <string name="enter_name">Please enter name</string>
+    <string name="enter_title">Please enter title</string>
+
+    //add menu
+    <string name="enter_dishname">Please enter dish name</string>
+    <string name="enter_dishdescription">Please enter dish description</string>
+    <string name="enter_dishprice">Please enter dish price</string>
+    <string name="enter_dishtime">Please enter dish time</string>
+    <string name="enter_dishimage">Please select dish image</string>
+    <string name="enter_dishcuisine">Please enter cuisines type</string>
+    <string name="enter_dishcategory">Please enter category type</string>
+
+    <string name="addqty">Add Quantity</string>
+    <string name="save">Save</string>
+    <string name="delete_item">Delete dish from menu</string>
+    <string name="enter_qty">Please add qunatitiy</string>
+    <string name="phone">Phone Number</string>
+    <string name="qty">Qty</string>
+    <string name="quantity">Quantity</string>
+    <string name="total_price">Total Price</string>
+    <string name="orderby"><u>Order By</u></string>
+    <string name="orderfinish"><u>Order to be finished</u></string>
+    <string name="items_order"><u>Items in this order</u></string>
+    <string name="vat">VAT(5%)</string>
+    <string name="freshomefee">Mansa Musa Fee(10%)</string>
+    <string name="deliverycharges">Delivery Charges</string>
+
+    <string name="oldpass">Old Password</string>
+    <string name="newpass">New Password</string>
+    <string name="renewpass">Re-New Password</string>
+    <string name="enteroldpass">Please enter old password</string>
+    <string name="enternewpass">Please enter new password</string>
+    <string name="enterrepass">Please re-enter new password</string>
+    <string name="repassmatch">Password does not match</string>
+    <string name="pass_length">Password should be greater than 5</string>
+    <string name="title_activity_add_menu">AddMenuActivity</string>
+    //feedback
+    <string name="feedback_i">Feedback</string>
+    <string name="scheduleweek">Schedule Your Week</string>
+    <string name="selectmenu">Select Menu</string>
+    <string name="loadmore">Load More...</string>
+
+    <string name="selectdate">Select Date</string>
+    <string name="to">To</string>
+    <string name="enterto">Please select to date</string>
+    <string name="from">From</string>
+    <string name="enterfrom">Please select from date</string>
+    <string name="totalrevenue">Total revenue</string>
+    <string name="mykitcenearning">My shop revenue</string>
+    <string name="planfee">My Plan fee</string>
+    <string name="timePeriod">Time period</string>
+    <string name="totalsold">Total number of orders sold</string>
+    <string name="sale_percent">Percentage of profit and loss</string>
+    <string name="bestmeal">Best product sold</string>
+    <string name="bestday">Best selling day</string>
+    <string name="dash">-</string>
+
+    <string name="search">Search</string>
+
+    <string name="sort">Sort By</string>
+
+    <string name="filterby">Filter By</string>
+    <string name="changeloc">Change Location</string>
+    <string name="selectcategory">Select Categories</string>
+    <string name="selectcusinies">Select Cuisines</string>
+    <string name="meals">Meals for</string>
+    <string name="dailysales">Daily Sales Report</string>
+    <string name="weeklysales">Weekly Sales Report</string>
+    <string name="monthysales">Monthly Sales Report</string>
+
+    <string name="supplierdetail">Supplier Menu</string>
+    <string name="selectdays">Choose your working days</string>
+    <string name="selectmeals">Select type of meal</string>
+
+    <string name="serving">Serving for(per person)</string>
+
+
+    <string name="reset">Reset</string>
+
+    <string name="done_i">Done </string>
+
+    <string name="rating">Rating</string>
+    <string name="send">Send</string>
+    <string name="subject">Subject</string>
+    <string name="d_address">Delivery Address</string>
+    <string name="max_words">Max 200 words</string>
+    <string name="occupation">Occupation</string>
+    <string name="gender">Gender</string>
+
+
+    //contact us
+    <string name="select_time">Select Time</string>
+    <!--<string name="email">Email-ID</string>-->
+    <string name="add_address">Add Address</string>
+
+
+    -----------------user module----------------------------
+    <string name="change_email">Change Email-id</string>
+    <string name="change_contact">Change Contact No.</string>
+    <string name="title">Title</string>
+    <string name="favo_chef">Favo Chefs</string>
+    <string name="favo_dish">Favo Dishes</string>
+    <string name="total_item">Total Items</string>
+    <string name="order_no">Order No. </string>
+    <string name="repeat">Repeat</string>
+
+    <string name="name_demo">James Thomson</string>
+
+
+    //address
+    <string name="notificartion_demo">James Thomson is looking for a sales representative for a demo</string>
+
+    //favo
+    <string name="name_dish">Chocolate brownie ice cream</string>
+    <string name="name_loc_demo">Bridge Street, main road, USA</string>
+
+
+    //history
+    <string name="demo_price">AED 23.90</string>
+    <string name="demo_menu_items"></string>
+    <string name="demo_items">1023</string>
+
+    <string name="demo_starttime">9:00am</string>
+    <string name="demo_endtime">8:00pm</string>
+
+    <string name="date">21 Jan 2019</string>
+    <string name="phone_no">+919872983733</string>
+    <string name="demo_email">demotesting@gmail.com</string>
+    <string name="orderno"> Order #34334</string>
+    <string name="banktransfer">Bank Transfer</string>
+    <string name="getinvoice">Get Invoice</string>
+    <string name="deliverto">Delivery Address</string>
+    <string name="payment">Payment</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="total_earning">Total earning</string>
+    <string name="selectpaymentmethod">Select Payment Method</string>
+    <string name="addedcard">Added Cards</string>
+    <string name="addcard">Add Card</string>
+    <string name="menu">Menu</string>
+    <string name="name_oncard">Name(written on card)</string>
+    <string name="credit_card">Credit card number</string>
+    <string name="expirydate">Expiry Date</string>
+    <string name="cvv">CVV code</string>
+    <string name="text_default">Default</string>
+    <string name="availablebalance">Available Balance</string>
+    <string name="transactionhistory">Transaction History</string>
+    <string name="transactionfee">Transaction Fee</string>
+    <string name="requestwithdrawal">Request money withdraw</string>
+    <string name="rateus">Rate your order</string>
+    <string name="taste">Taste</string>
+    <string name="presentation">Presentation</string>
+    <string name="packing">Packing</string>
+
+    <string name="overall">Overall Experience</string>
+
+
+    //wallet
+    <string name="review_here">Write your review here</string>
+    <string name="cancel">Cancel</string>
+    <string name="demo_username">pawanjangra1271</string>
+    <string name="demo_password">12345</string>
+    <string name="demo_date">12</string>
+    <string name="demo_month">Jan 2019</string>
+    <string name="demo_day">Monday</string>
+    <string name="no_data">No Data Found</string>
+    <string name="no_reviews">No Reviews Found</string>
+    <string name="delete">Delete</string>
+    <string name="viewall">View all</string>
+    <string name="chefschedule">Chef \u0027s Schedule</string>
+    <string name="chefsmenu">Chef \u0027s Menu</string>
+    <string name="openinghours">Opening Hours</string>
+    <string name="availableitem">Available items</string>
+    <string name="viewmenu">View Menu</string>
+    <string name="deliveryaddress">Delivery Address</string>
+
+    <string name="select_address">Select Delivery Address</string>
+    <string name="subtotal">Sub Total :</string>
+
+
+    //schedule-----supplier detail
+    <string name="vat_percent">VAT  5% :</string>
+    <string name="deliverychargees">Delivery Charges :</string>
+    <string name="total">Total</string>
+    <string name="addtocart">Add to cart</string>
+    <string name="addedtocart">Items added to cart</string>
+
+
+    //===cart----
+    <string name="checkout">CheckOut</string>
+    <string name="items">Items</string>
+    <string name="view_cart">View Cart</string>
+    <string name="rate_food">Rate the food</string>
+    <string name="rating_msg">Your rating will help others to try this dish.</string>
+    <string name="additional_phone">Additional Phone Number</string>
+    <string name="additional_requirements">Additional Requirements</string>
+    <string name="additional">Additional Info</string>
+    <string name="proceed_payment">Proceed with payment</string>
+    <string name="overall_rating">Overall Rating</string>
+    <string name="enter_comment">Please enter your comment</string>
+
+    //-----rate item----
+    <string name="addmore">Add More</string>
+    <string name="upload_schedule">Upload Schedule</string>
+
+    <string name="update_schedule">Update Schedule</string>
+    <string name="click_here">Copy</string>
+    <string name="copyed">Data Copied to Clipboard</string>
+    <string name="default_notification_channel_id">12321</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="reject_order">Reject Order</string>
+    <string name="reject_msg">Why you are rejecting this order?</string>
+    <string name="max_words_100">Max 100 words</string>
+    <string name="company_phone">Company Phone Number</string>
+    <string name="select_company_name">Please Select Company Name</string>
+    <string name="enter_company_phone">Please Enter Company Phone Number</string>
+
+    <string name="age">Age</string>
+    <string name="available_driver">Available for delivery?</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="orderhistory">Order History</string>
+    <string name="mytrips">My Trips</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="distance">Distance from kitchen</string>
+
+
+    //-------driver module------
+    <string name="delivery_date">Delivery Date</string>
+    <string name="delivery_detail">Delivery Details</string>
+    <string name="mark_out_deliervy">Order Delivered?</string>
+    <string name="mark_pickedup">Picked Up Order?</string>
+    <string name="title_activity_driver_nav_drawer">DriverNavDrawerActivity</string>
+    <string name="next">Next</string>
+    <string name="online_orders">Online Orders</string>
+    <string name="pre_orders">Pre Orders</string>
+    <string name="select_date">Select Date</string>
+    <string name="your_card">My Cards</string>
+    <string name="select_card">Please select credit card</string>
+
+    <string name="select_paymethod">Please select payment method</string>
+
+    <string name="login_first">To access this functionality, Please login first.</string>
+    <string name="login_alert">Login Required</string>
+    <string name="sales_person">Mansa musa Salesperson?</string><!--<string name="order_detail"></string>-->
+    <string name="title_activity_sales_nav_drawer">ActivitySalesNavDrawer</string>
+
+    <string name="myrequest">My Request</string>
+    <string name="jobhistory">Job History</string>
+    <string name="mycustomer">My Customer</string>
+    <string name="switchto">Switch To</string>
+    <!--<string name="select_time">Select Time</string>-->
+    <string name="tobuy"><font color="#9D9C9A">To Buy</font></string>
+    <string name="tosell">To Sell</string>
+    <string name="demo">Demo</string>
+    <string name="demovideo">Demo Video Tour</string>
+
+
+    <string name="guestsupplier">Sell As Guest</string>
+    <string name="scancode">Scan QR Code</string>
+
+
+    //sales drawer
+
+    <string name="scan">Scan QR Code</string>
+    <string name="type_sweets">Sweets&amp;Flowers</string>
+    <string name="type_products">Products</string>
+    <string name="type_food">Sweets&amp;Flowers</string>
+    <string name="type_homemade">Products</string>
+    <string name="type_shop">Shop Products</string>
+    <string name="type_shop_i">Shop Products</string>
+    <string name="total_job_done">Total Job Done</string>
+    <string name="uloc">Location</string>
+    <string name="askforhelp">Ask for help</string>
+    <string name="send_request">Send Request</string>
+    <string name="processing_request">Processing Request</string>
+    <string name="new_request">New Request</string>
+
+    <string name="title_activity__sales__request_detail">Activity_Sales_RequestDetail</string>
+    <string name="ask_type">What you want to sell with Mansa musa?</string>
+    <string name="want_cancel">Want to cancel the request?</string>
+    <string name="want_cancel_job">Want to cancel the job?</string>
+    <string name="cancel_req">Cancel Request</string>
+    <string name="msg">Message</string>
+
+
+    //supplier type
+    <string name="select_reason">Select Your Reason</string>
+
+    <string name="share">Share</string>
+
+    <string name="copycode_link">Copy Link</string>
+    <string name="scan_code_text">Align the QR code within the \n frame to scan.</string>
+    <string name="previous">Previous</string>
+
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="roles_responsiblites">Roles and responsiblities of a  salesperson</string>
+    <string name="pending_req">Pending Request</string>
+    <string name="accepted_by">Accepted By</string>
+    <string name="ascustomer_i">Buy</string>
+    <string name="assupplier_i">Sell</string>
+    <string name="assales_i">Sales</string>
+    <string name="change_product">Change Product Type</string>
+    <string name="header_image">Choose your header image</string>
+
+    <string name="use_image">Use as header image</string>
+
+    <string name="add_pro">Add Product</string>
+
+    <string name="rat_sale">Rate the salesperson</string>
+
+    <string name="product_name">Product Name</string>
+    <string name="product_name_arabic">Product Name in Arabic</string>
+    <string name="product_price">Product Price</string>
+
+
+    <string name="product_qty">Product Quantity</string>
+    <string name="product_description_arabic">Product Description in Arabic</string>
+    <string name="product_description">Product Description</string>
+    <string name="select_category">Select Category</string>
+    <string name="sub_category">Select Sub Category</string>
+
+    <string name="continue_text">Continue</string>
+    <string name="pro_image">Select product image</string>
+
+    <string name="pro_sib_Cat">Select sub categories</string>
+    <string name="enter_proname">Please enter product name</string>
+
+
+    <string name="enter_prodescription">Please enter product description</string>
+    <string name="enter_proprice">Please enter product price</string>
+    <string name="enter_proqty">Please enter product quantity</string>
+    <string name="enter_discount">Please enter discount</string>
+    <string name="my_items">My Items</string>
+    <string name="my_orders">My Orders</string>
+    <string name="old_email">Old Email-ID</string>
+
+    <string name="new_email">New Email-ID</string>
+    <string name="enteroldemail">Please enter old Email-ID</string>
+    <string name="enternewemail">Please enter new Email-ID</string>
+    <string name="edit_website">You can edit the categories of this product at website only. Click on the following link to edit</string>
+    <string name="web_link">http://freshhomee.com/web/</string>
+    <string name="delete_pro">Delete product</string>
+    <string name="change_license">Change Driving License</string>
+
+    <string name="select_licese">Please select your original driving license for verification</string>
+    <string name="change_licsense">Change Driving License</string>
+
+    <string name="proceed">Proceed</string>
+    <string name="plan_detail">Plans details</string>
+    <string name="close">Close</string>
+    <string name="typeproduct">Type of Product</string>
+
+    <string name="price_get">Amount Collected</string>
+    <string name="offer_discount">Would you like to give some discount on this item?</string>
+    <string name="discount">Discount (in %)</string>
+    <string name="attributes">Discount (in %)</string>
+    <string name="order_due">Order Due</string>
+
+    <string name="deliver_person"><u>Delivery Person</u></string>
+    <string name="freshhome_fee">Mansa musa Fee</string>
+    <string name="cancel_order">Want to cancel the order?</string>
+    <string name="cancel_refund">You will get the refund within 10 working days in your balance that you can spend during next purchase.</string>
+    <string name="transaction_fee">Transaction Fee</string>
+    <string name="link_bank">Link your bank account</string>
+    <string name="edit_bank"> Edit your bank account</string>
+    <string name="add_money">Add money</string>
+    <string name="firstname">First Name</string>
+
+    <string name="lastname">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="bankname">Bank Name</string>
+
+    <string name="account_no">Account Number</string>
+    <string name="iban">IBAN Number</string>
+    <string name="handmade">Hand Made</string>
+    <string name="factorymade">Factory Made</string>
+    <string name="edit">Edit</string>
+
+    <string name="card_no_hint">0000-0000-0000-0000</string>
+
+    <string name="card_date_hint">mm/yy</string>
+    <string name="place_order">Place Order</string>
+    <string name="confirmation_text">All of your earning will be sent in your bank account, so kindly cross check your details. \nAre you sure want to proceed?</string>
+    <string name="change_langauge">Change Language</string>
+    <string name="cash_in">Cash In</string>
+    <string name="cash_out">Cash Out</string>
+
+    <string name="amt">Amount</string>
+    <string name="enter_amt">Please enter amount</string>
+    <string name="cancel_subscription">Cancel Subscription</string>
+    <string name="sub_status">Subscription Status: </string>
+    <string name="sub_msg">Your subscription will be expired on </string>
+
+
+    <string name="cancel_plan_msg">Are you sure want to cancel the plan subscription?</string>
+
+    <string name="buy_plan">To use this feature, buy our supplier plan.</string>
+
+    <string name="driver">Driver</string>
+
+    <string name="food">Food</string>
+    <string name="produtcs">Products</string>
+    <string name="notification_text">Tracking, tap to cancel</string>
+    <string name="transport_id" translatable="false">Pawan</string>
+    <string name="firebase_path" translatable="false">locations</string>
+    <string name="firebase_email" translatable="false">pawanjangra1271@gmail.com</string>
+    <string name="firebase_password" translatable="false">123456</string>
+    <string name="order_show">Show ready Orders</string>
+    <string name="order_detail">View Detail</string>
+    <string name="hold_money">We will hold some money from your or credit card for security purpose and will be released back to you after delivery of the product.</string>
+    <string name="supplier_details">Supplier Details</string>
+    <string name="reserve_amt">Hold amount from balance</string>
+    <string name="near_by_kitchen">Near By Suppliers</string>
+
+    <string name="pending_orders">Pending Orders</string>
+    <string name="order_count">You have</string>
+    <string name="p_order">orders are waiting for the delivery</string>
+    <string name="p_one_order">order is waiting for the delivery</string>
+    <string name="kitchen_address">Kitchen Address</string>
+
+    <string name="user_address">User Address</string>
+    <string name="parcel_image">Add Parcel Image</string>
+    <string name="picup_loc">Pick Up Location</string>
+    <string name="delivery_loc">Delivery Location</string>
+    <string name="driver_earning">You will get</string>
+
+    <string-array name="location">
+        <item>Duabi</item>
+        <item>Sharjah</item>
+        <item>Ajman</item>
+    </string-array>
+    <string-array name="sorting">
+        <item>Newest meal</item>
+        <item>Near by suppliers</item>
+        <item>Big meals to small meals</item>
+        <item>Most seller</item>
+        <item>Highest ratings</item>
+
+    </string-array>
+    <string-array name="meals_array">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Dessert</item>
+    </string-array>
+    <string-array name="month_name">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>c</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+    <string-array name="sales_chart">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
+    </string-array>
+    <string-array name="serving">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="payment_method">
+        <item>Cash on delivery</item>
+        <item>Pay with card</item>
+    </string-array>
+
+    <string-array name="reject_reason">
+        <item>Item not available</item>
+        <item>Time slot not available</item>
+    </string-array>
+    <string-array name="stypePr">
+        <item>Choose product type</item>
+        <item>Sweets&amp;Flowers</item>
+        <item>Products</item>
+    </string-array>
+    <string-array name="stype">
+        <item>Sweets&amp;Flowers</item>
+        <item>Products</item>
+        <item>Shop Products</item>
+    </string-array>
+    <string-array name="country_code">
+        <item>+971</item>
+        <item>+962</item>
+        <item>+91</item>
+    </string-array>
+
+    <string name="view_onmap">View on Map</string>
+    <string name="want_to_deliver">Want to deliver this order?</string>
+    <string name="you_earn">Your Earnings </string>
+
+    <string name="order_kitchens">Order From Kitchens</string>
+    <string name="ordernow">Order Now</string>
+
+
+    <string name="best_selling">Best Selling</string>
+    <string name="latest_products">Latest Products</string>
+
+    <string name="default_address">Set as default address</string>
+    <string name="banner">Banner</string>
+
+
+    <string name="shop_category">Shop By Category</string>
+    <string name="shop_brands">Shop By Brands</string>
+    <string name="shop_supplier">Shop By Suppliers</string>
+    <string name="brands">Select Brands</string>
+    <string name="national_id">National ID</string>
+
+    <string name="cashout">Cashout</string>
+    <string name="approval">Pending for Approval</string>
+
+    <string name="main_category">Main Category</string>
+
+    <string name="text_nationalid_acceptance">National-ID need approval from admin. When you upload an image that will be appeared here only when admin approve that.</string>
+
+    <string name="text_license_acceptance">The driving license needs approval from the admin. When you upload an image that will be appeared here only when admin approves that.</string>
+    <string name="cashout_msg">You can get this money in form of cash from exchanges associated with us.</string>
+    <string name="approval_msg">This amount is pending for approval from the admin. Once this payment is release then automatically shifted to your cashout balance.</string>
+    <string name="payment_alert">Payment Alert</string>
+    <string name="payment_option_txt">If you want to deduct money from your \nbusiness developer wallet then select \noption Wallet Pay. Otherwise you can \nselect Card Pay mode</string>
+    <string name="wallet_pay">Wallet Pay</string>
+    <string name="card_pay">Card Pay</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="withdraw_under_process">Your withdraw request is under process</string>
+    <string name="terms_condtns"><![CDATA[I accept the Terms and Conditions & Privacy Policy]]></string>
+
+    <string name="looking_for">What are you looking for?</string>
+    <string name="order_sellers">Order From Sellers</string>
+    <string name="best_dealsaa">Best deals</string>
+    <string name="best_deals">Mansamusa collection</string>
+    <string name="_4_up"><![CDATA[ & up]]></string>
+    <string name="_3_up"><![CDATA[ & up]]></string>
+    <string name="_2_up"><![CDATA[ & up]]></string>
+    <string name="_1_up"><![CDATA[ & up]]></string>
+    <string name="_2500_aed_above"><![CDATA[2500 AED & above]]></string>
+    <string name="one_seller_deff">You can buy multiple product from\n one seller.</string>
+    <string name="more_same_seller">Add more items from same seller</string>
+    <string name="go_to_cart">Go to cart</string>
+    <string name="view_prodct">View Product</string>
+    <string name="hprodct">Products</string>
+    <string name="view_prodct_catelog">Product Catalog</string>
+    <string name="minimus_hundred">You can\'t place order less than 100\n AED amount. Do you want to add more\n product from same supplier?</string>
+    <string name="return_order">Return Order</string>
+    <string name="track_order">Track Order</string>
+
+    <string name="shop_revenue">Shop revenue</string>
+    <string name="trans_no">Transaction No.</string>
+    <string name="order_place_msg">Mansa Musa Got the order from our valuable customer.</string>
+    <string name="confirmed_msg">Mansa Musa supplier’s confirmed receiving the order and the supplier is packing the customer order.</string>
+    <string name="processing_msg">The customer order is ready for delivery and Delivery team will collect it soon.</string>
+    <string name="out_for_delivery_msg">Your order is in the way for the customer.</string>
+    <string name="delivered_msg">The order is successfully delivered to the customer.</string>
+
+</resources>
+
+

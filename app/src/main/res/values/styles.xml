@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="ratingBarStyle">?android:attr/ratingBarStyleIndicator</item>
+        <item name="colorControlNormal">@color/light_gray</item>
+        <item name="colorControlActivated">@color/rating_stars</item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:maxHeight">14dip</item>
+    </style>
+
+    <style name="Theme.ToogleTheme" parent="Theme.AppCompat.Light">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/gray_light_50</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/gray_light_50</item>
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/app_color_blue</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="nav_drawer_Text">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/label_text_size_15</item>
+    </style>
+
+    <style name="MyProgressBar" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <!--<item name="indeterminateOnly">false</item>-->
+        <!--<item name="progressDrawable">@drawable/progress_horizontal</item>-->
+        <!--<item name="indeterminateDrawable">@drawable/progress_indeterminate_horizontal</item>-->
+        <!--<item name="minHeight">0dip</item>-->
+        <!--<item name="maxHeight">0dip</item>-->
+        <!--<item name="mirrorForRtl">false</item>-->
+    </style>
+</resources>

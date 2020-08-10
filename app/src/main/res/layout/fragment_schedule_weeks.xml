@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.ScheduleWeeksFragment">
+
+    //ttitle
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/image_backward"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/backward"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_month_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule"
+                android:textColor="@color/black"
+                android:textSize="@dimen/label_text_size_24" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/text_week"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="week1"-->
+            <!--android:textColor="@color/light_gray"-->
+            <!--android:textSize="@dimen/label_text_size" />-->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_forward"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/forword" />
+    </LinearLayout>
+
+    <!--//calendar-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="@dimen/padding_10">-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Mon"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Tue"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Wed"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Thu"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Fri"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Sat"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Sun"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/text_dateMon"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Mon"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/text_dateTue"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Tue"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/text_dateWed"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Wed"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/text_dateThu"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Thu"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/text_dateFri"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Fri"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/text_dateSat"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Sat"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/text_dateSun"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Sun"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="@dimen/label_text_size_13" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<com.freshhome.WeeklyCustomcalendar.WeekCalendar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/weekCalendar"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="65dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:dayNameLength="threeLetters"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:numOfPages="4" />&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+                //w1
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_week1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10">
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/circle_bg_w_one"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="W1"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/label_text_size_17"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_w1date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1Sept - 7Sept"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/label_text_size" />
+
+                            <com.freshhome.CommonUtil.FlowLayout
+                                android:id="@+id/flow_layout_w1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:flRowSpacing="@dimen/padding_5">
+
+                            </com.freshhome.CommonUtil.FlowLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                //w2
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_week2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10">
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/circle_bg_w_two"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="W2"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/label_text_size_17"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_w2date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1Sept - 7Sept"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/label_text_size" />
+
+                            <com.freshhome.CommonUtil.FlowLayout
+                                android:id="@+id/flow_layout_w2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:flRowSpacing="@dimen/padding_5">
+
+                            </com.freshhome.CommonUtil.FlowLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                //w3
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_week3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10">
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/circle_bg_w_three"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="W3"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/label_text_size_17"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_w3date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1Sept - 7Sept"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/label_text_size" />
+
+                            <com.freshhome.CommonUtil.FlowLayout
+                                android:id="@+id/flow_layout_w3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:flRowSpacing="@dimen/padding_5">
+
+                            </com.freshhome.CommonUtil.FlowLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                //w4
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_week4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_10">
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/circle_bg_w_four"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="W4"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/label_text_size_17"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_w4date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1Sept - 7Sept"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/label_text_size" />
+
+                            <com.freshhome.CommonUtil.FlowLayout
+                                android:id="@+id/flow_layout_w4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:flRowSpacing="@dimen/padding_5">
+
+                            </com.freshhome.CommonUtil.FlowLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/checkmark"
+            app:backgroundTint="@color/app_color_blue" />
+
+    </FrameLayout>
+</LinearLayout>

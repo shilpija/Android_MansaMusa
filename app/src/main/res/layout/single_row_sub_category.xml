@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:buttonTint="@color/app_color_blue"
+            android:text="@string/sub_category"
+            android:textColor="@color/app_color_blue" />
+
+        <TextView
+            android:id="@+id/text_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/label_text_size" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_more_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cake, Gifts, Food"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:textSize="@dimen/label_text_size" />
+
+</LinearLayout>

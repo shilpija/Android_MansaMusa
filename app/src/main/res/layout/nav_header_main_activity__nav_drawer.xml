@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="3dp"
+            android:src="@drawable/cross" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".35"
+            android:gravity="center|left">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon" />
+
+                <LinearLayout
+                    android:id="@+id/linear_active_inactive"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|bottom"
+                    android:background="@drawable/circle_bg_gray" />
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".67">
+
+            <FrameLayout
+                android:id="@+id/frame_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/side_menu_logo" />
+
+                <LinearLayout
+                    android:id="@+id/linear_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center|top">
+
+                    <TextView
+                        android:id="@+id/text_badge"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textSize="@dimen/label_text_size_13" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/label_text_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_qrcode"
+            android:layout_width="25dp"
+            android:padding="@dimen/padding_3"
+            android:layout_height="25dp"
+            android:src="@drawable/qr_code"
+             />
+    </LinearLayout>
+
+</LinearLayout>

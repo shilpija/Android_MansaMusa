@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        //body
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                //body
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/left_menu" />
+
+                    <!-- TODO! spinner_company_name -->
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center|left"
+                       android:orientation="horizontal">
+
+                       <Spinner
+                           android:id="@+id/spinner_company_name"
+                           android:layout_width="match_parent"
+                           android:background="@null"
+                           android:popupBackground="@color/white"
+                           android:layout_height="wrap_content"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:alpha=".5"
+                       android:background="@color/light_gray" />
+
+                   //phone number
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_country_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawSelectorOnTop="true"
+                            android:popupBackground="@color/white"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:id="@+id/img_arrow"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/arrow_donw" />
+
+                        <EditText
+                            android:id="@+id/edit_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="@string/company_phone"
+                            android:inputType="phone"
+                            android:padding="@dimen/padding_edittext"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/edit_text_hint"
+                            android:textSize="@dimen/edit_text_size" />
+
+                    </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:alpha=".5"
+                       android:background="@color/light_gray" />
+
+                   //submit btn
+
+                   <LinearLayout
+                       android:id="@+id/linear_submit"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="15dp"
+                       android:background="@drawable/bg_button"
+                       android:elevation="5dp">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingBottom="8dp"
+                           android:paddingLeft="40dp"
+                           android:paddingRight="40dp"
+                           android:paddingTop="8dp"
+                           android:text="@string/submit"
+                           android:textAllCaps="true"
+                           android:textColor="@color/white"
+                           android:textSize="@dimen/label_text_size" />
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+       </ScrollView>
+
+       //header
+
+       <LinearLayout
+           android:id="@+id/linear_back"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="left">
+
+           <ImageView
+               android:layout_width="45dp"
+               android:layout_height="45dp"
+               android:padding="10dp"
+               android:src="@drawable/back_b" />
+       </LinearLayout>
+   </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "350237825472",
+    "firebase_url": "https://freshhome-eb8df.firebaseio.com",
+    "project_id": "freshhome-eb8df",
+    "storage_bucket": "freshhome-eb8df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350237825472:android:1a16e5d1bfc56040",
+        "android_client_info": {
+          "package_name": "com.freshhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350237825472-48eaaikehqme6gnnc18cm34oqitq1rvj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freshhome",
+            "certificate_hash": "b150d9c957f54e70aa45ac299e462efe7c63deb6"
+          }
+        },
+        {
+          "client_id": "350237825472-fv5lb0vpptt88td2801phklf10jhto6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ8iZ-WJM8LXDjBfVDFVeVKvlXcccVMnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350237825472-fv5lb0vpptt88td2801phklf10jhto6c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "350237825472-l432fpjqftmodthcqf71kk5oi07je0c0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.freshomeapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
