@@ -35,9 +35,33 @@ Mansa Musa System is depending on the best, mature, hard workers, smart and effi
   * Firebase/deep linking for share app link
   * GoogleSignIn
   * Zxing library for scanner
+  
 ## Requirements
 Mansamusa works with android 5.0 and support latest version of android. To use Mansamusa with a project targeting android pie or api level 28, you must include all java  files directly in your project.
 * android  5.0/api level 21 or above
 * android studio 3.6.3 and above
 * Java
+* Java
+* JDK 8
+* Latest Android SDK tools
+* Latest Android platform tools
+* Android SDK 28
+* AndroidX
+
+Building
+========
+To build you will need:
+
+ * A Java compiler compatible with Java 1.8
+ * The Android SDK with platform 26 installed
+ 
+ 
+ Building with Android Studio
+---------------------
+You can also build with Android Studio by importing this project into it.
+
+
+Documentation
+=============
+Javadocs can be generated using `gradle javadoc` or `android doc`
 
