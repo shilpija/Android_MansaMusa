@@ -40,3 +40,4 @@ Mansamusa works with android 5.0 and support latest version of android. To use M
 * android  5.0/api level 21 or above
 * android studio 3.6.3 and above
 * Java
+
